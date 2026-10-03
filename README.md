@@ -21,6 +21,7 @@ mostly for C/C++.
 ---
 
 ## C/C++ specific ##
++ Preferred static programming language
 
 ### Compilation ###
 + Provide a Makefile
@@ -108,7 +109,8 @@ mostly for C/C++.
 + Try to use the conventional alphabetical iterators `i, j, k`
 + If alphabetical iterators are not expressive enough, use whole words
 + Use `while (true)` for infinite loops
-+ If you will have NO other use for an iterator, put it inside the for loop declaration, C99> style
++ If you will have NO other use for an iterator,
+  put it inside the for loop declaration, C99> style
 + Avoid commas in conditionals, it'll make Xolatile seethe
 
 ### Operators ###
@@ -137,4 +139,18 @@ mostly for C/C++.
 + Use (single line) C comments to partition code (`// Init`)
 + Use (multi line) C++ comments with leading starts to explain sections of code
 + Use `#if 0... #endif` if you want to comment out blocks of code
-+ "This is a bridge" is not insigthful commentary
++ "This is a bridge" is not insightful commentary
+
+---
+
+## Perl specific ##
++ Preferred scripting language
+
+### Guidelines ###
++ Always `use feature 'signatures'`
+
+### Library recommendations ###
++ Path::Tiny
++ File::Slurp
++ CGI::Tiny
++ Template
